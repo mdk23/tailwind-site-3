@@ -1,26 +1,34 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card-service-style{
+  @apply text-center shadow-2xl p-10 rounded-xl my-5 flex-1 bg-white dark:bg-gray-800
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+.card-service-h3{
+  @apply text-lg font-medium pt-8 pb-2 dark:text-white
 }
 
-* {
-  box-sizing: border-box;
+.card-service-h4{
+  @apply py-4 text-teal-600 font-semibold
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+
+.card-service-p{
+  @apply text-gray-800 py-1 dark:text-white
+}
+
+
+.card-project-style{
+  @apply flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap
+}
+
+
+@font-face{
+  font-family: 'burtons';
+  src: url('../public/Burtons.otf');
 }
